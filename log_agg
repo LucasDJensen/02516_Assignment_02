@@ -1,0 +1,28 @@
+14:38:31 | INFO     | ==== Stage: parse args -> OK
+14:38:31 | INFO     | root_dir=C:/Users/owner/Documents/DTU/Semester_1/comp_vision/ucf101  split(train/val)=train/val  frames=10  size=112  batch=8
+14:38:31 | INFO     | ==== Stage: choose device -> cpu
+14:38:31 | INFO     | ==== Stage: build datasets
+14:38:31 | INFO     | Datasets ready -> train: 500 videos, val: 120 videos
+14:38:31 | INFO     | ==== Stage: build model
+14:38:31 | INFO     | Model: ResNet18, classes=101 | Optim: AdamW lr=0.0003
+14:38:31 | INFO     | ---- Epoch 1/5 | Train start
+14:40:08 | INFO     | ---- Epoch 1/5 | Train done: loss=2.3592 acc=0.278
+14:40:08 | INFO     | ---- Epoch 1/5 | Eval start
+14:40:32 | INFO     | ---- Epoch 1/5 | Eval done:  loss=1.7551 acc=0.392
+14:40:32 | INFO     | ** Checkpoint saved: agg2d_best.pt (val_acc=0.392)
+14:40:32 | INFO     | ---- Epoch 2/5 | Train start
+14:42:22 | INFO     | ---- Epoch 2/5 | Train done: loss=1.2372 acc=0.610
+14:42:22 | INFO     | ---- Epoch 2/5 | Eval start
+14:42:47 | INFO     | ---- Epoch 2/5 | Eval done:  loss=1.8845 acc=0.467
+14:42:47 | INFO     | ** Checkpoint saved: agg2d_best.pt (val_acc=0.467)
+14:42:47 | INFO     | ---- Epoch 3/5 | Train start
+14:44:39 | INFO     | ---- Epoch 3/5 | Train done: loss=0.8641 acc=0.720
+14:44:39 | INFO     | ---- Epoch 3/5 | Eval start
+14:44:59 | INFO     | ---- Epoch 3/5 | Eval done:  loss=1.8076 acc=0.483
+14:44:59 | INFO     | ** Checkpoint saved: agg2d_best.pt (val_acc=0.483)
+14:44:59 | INFO     | ---- Epoch 4/5 | Train start
+14:46:43 | INFO     | ---- Epoch 4/5 | Train done: loss=0.7250 acc=0.778
+14:46:43 | INFO     | ---- Epoch 4/5 | Eval start
+14:47:04 | INFO     | ---- Epoch 4/5 | Eval done:  loss=0.8069 acc=0.767
+14:47:04 | INFO     | ** Checkpoint saved: agg2d_best.pt (val_acc=0.767)
+14:47:04 | INFO     | ---- Epoch 5/5 | Train start
