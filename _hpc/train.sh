@@ -36,4 +36,4 @@
 source ~/02516_venv/bin/activate
 module load cuda/12.8.1
 
-python ~/code/02516_assignment_02/train.py --data_dir /dtu/datasets1/02516/ufc10 --train_split train --val_split val --img_size 112 112 --batch_size 8 --epochs 100 --lr 1e-3 --weight_decay 1e-4 --num_workers 0 --use_amp --grad_clip 1.0 --model two_stream
+python ~/code/02516_Assignment_02/train.py --data_dir /dtu/datasets1/02516/ufc10 --train_split train --val_split val --img_size 112 112 --batch_size 8 --epochs 100 --lr 1e-3 --weight_decay 1e-4 --num_workers 0 --use_amp --grad_clip 1.0 --model two_stream
