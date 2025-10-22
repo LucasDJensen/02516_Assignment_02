@@ -26,12 +26,13 @@ def main():
     parser.add_argument("--use_amp", action="store_true", help="Mixed precision")
     parser.add_argument("--grad_clip", type=float, default=1.0)
     parser.add_argument("--save_dir", type=str, default=None)
-    parser.add_argument("--model", type=str, default="3d", choices=["3d", "2d_per_frame_avg", "early_fusion_2d", "late_fusion"],
+    parser.add_argument("--model", type=str, default="3d",
+                        choices=["3d", "2d_per_frame_avg", "early_fusion_2d", "late_fusion", "two_stream"],
                         help="Model architecture / fusion strategy")
     parser.add_argument("--num_classes", type=int, default=10)
     parser.add_argument("--n_sampled_frames", type=int, default=10)
     parser.add_argument("--fusion_agg", type=str, default="mean", choices=["mean", "max"],
-                        help="Aggregation method for per-frame or late fusion")
+                        help="Aggregation method for fusion modules (two_stream respects mean or element-wise max fusion)")
 
     args = parser.parse_args()
 
